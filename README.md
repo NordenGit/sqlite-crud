@@ -30,7 +30,7 @@ Si tu n'as pas encore de `requirements.txt`, crée-le avec cette commande (dans 
 
 ```bash
 pip freeze > requirements.txt
-
+```
 
 ### Demo
 ![alt text](https://user-images.githubusercontent.com/16520789/71201563-54cce200-22c0-11ea-97c2-5dd89637ca5a.png "Node File Explorer")
