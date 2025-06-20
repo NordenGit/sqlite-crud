@@ -1,26 +1,35 @@
-# Python SQLite
-Simple Python Application For CRUD operations through SQLite.
-### Git Clone 
-``` git clone https://github.com/nordengit/sqlite-crud.git```
-### Change Directory
-```cd python-sqlite```
-### Note : Install Python for your system with pip
-```pip install virtualenv```
+# sqlite-crud-app
 
-```source bin/activate```
+## Description
 
-```pip install flask flask-sqlalchemy```
-### Export 
-```export FLASK_APP=app.py```
+Application Python Flask avec SQLite, tests automatisés avec Pytest et Selenium.  
+Le projet est packagé dans une image Docker et testé dans un conteneur.
 
-```export FLASK_DEBUG=True```
+---
 
-``` flask run ``` 
+## Prérequis
 
-### Install Dependences 
-``` pip install```
-### Start Server
-```flask run```
+- Docker installé sur ta machine
+- (Optionnel) Windows pour exécuter le script `run.bat` fourni
+
+---
+
+## Fichiers importants
+
+- `Dockerfile` : définition de l'image Docker
+- `requirements.txt` : liste des dépendances Python (pytest, selenium, flask, flask_sqlalchemy)
+- `run.bat` : script batch Windows pour build, lancer le conteneur et exécuter les tests
+- `app.py` : application Flask
+- `test/` : dossier contenant les fichiers de tests Pytest
+
+---
+
+## Comment générer le fichier requirements.txt
+
+Si tu n'as pas encore de `requirements.txt`, crée-le avec cette commande (dans ton environnement virtuel Python) :
+
+```bash
+pip freeze > requirements.txt
 
 
 ### Demo
