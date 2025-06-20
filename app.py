@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///mydb.db"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 class User1(db.Model):
     id = db.Column(db.Integer,primary_key=True, autoincrement=True)
@@ -44,8 +44,8 @@ def get():
         lastname = request.form['lastname']
         email = request.form['email']
         password = request.form['password']
-        newUser1 = User1(firstname=firstname,lastname=lastname,email=email,password=password)
-        db.session.add(newUser1)
+        new_user1 = User1(firstname=firstname,lastname=lastname,email=email,password=password)
+        db.session.add(new_user1)
         db.session.commit()
         return redirect('/')
 
