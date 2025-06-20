@@ -1,7 +1,7 @@
 # Python SQLite
 Simple Python Application For CRUD operations through SQLite.
 ### Git Clone 
-``` git clone https://github.com/maheshkareeya/python-sqlite.git```
+``` git clone https://github.com/nordengit/sqlite-crud.git```
 ### Change Directory
 ```cd python-sqlite```
 ### Note : Install Python for your system with pip
